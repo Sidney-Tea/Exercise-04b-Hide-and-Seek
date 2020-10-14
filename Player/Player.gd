@@ -52,5 +52,6 @@ func set_animation(anim):
 	else: $AnimatedSprite.play()
 
 func die():
-	Backup.current = true
-	queue_free()
+	pass
+
+
