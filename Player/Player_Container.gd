@@ -14,3 +14,8 @@ func _physics_process(_delta):
 		player.position = starting_position
 		add_child(player)
 		player.get_node("Camera2D").current = true
+
+
+func _on_Area2D_body_entered(body):
+	if body.get_name() == "Player":
+		queue_free()
